@@ -213,7 +213,7 @@ class Simulator : public SimulatorBase {
 
   V8_EXPORT_PRIVATE intptr_t CallImpl(byte* entry, int argument_count,
                                       const intptr_t* arguments);
-  int32_t CallFPImpl(byte* entry, double d0, double d1);
+  intptr_t CallFPImpl(byte* entry, double d0, double d1);
 
   // Unsupported instructions use Format to print an error and stop execution.
   void Format(Instruction* instr, const char* format);
